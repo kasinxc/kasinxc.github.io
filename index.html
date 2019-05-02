@@ -23,7 +23,7 @@ title: "kasinxc"
     <ul>
         {% for cat in site.categories %}
 
-            {{ cat[0] }}
+            <a href="{{ site.baseurl }}{{ categories.url }}">{{ cat[0] }}</a> 
 
         {% endfor %}
      </ul>
