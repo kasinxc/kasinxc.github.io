@@ -5,6 +5,7 @@ title: "kasinxc"
 
 <h2>{{ page.title }}</h2>
 
+
 <p>Articles</p>
 
 <ul>
@@ -16,3 +17,14 @@ title: "kasinxc"
 　　{% endfor %}
 
 </ul>
+
+<div id="categories-3" class="left">
+    <h3>Categories</h3>
+    <ul>
+        {% for cat in site.categories %}
+
+            {{ cat[0] }}
+
+        {% endfor %}
+     </ul>
+ </div>
