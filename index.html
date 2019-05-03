@@ -23,26 +23,11 @@ My personal website.
     <h3>Categories</h3>
     <ul>
         {% for cat in site.categories %}
-            {{ site.baseurl }}{{ categories.url }}
-            {{ cat[0] }}
-            {{ site.baseurl }}{{ cat[0].url }}
             <li><a href="{{ site.baseurl }}{{ categories.url }}">{{ cat[0] }}</a></li>
 
         {% endfor %}
      </ul>
 </div>
 
-<p> Tags </p>
-
-<ul>
-    {% comment %}
-    =======================
-    The purpose of this snippet is to list all the tags you have in your site.
-    =======================
-    {% endcomment %}
-    {% for tag in tags %}
-        <a href="#{{ tag | slugify }}"> {{ tag }} </a>
-    {% endfor %}
- </ul>
 
 
