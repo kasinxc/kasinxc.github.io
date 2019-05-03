@@ -23,10 +23,10 @@ My personal website.
     <h3>Categories</h3>
     <ul>
         {% for cat in site.categories %}
-            {{ site.baseurl }}{{ cat.url }}
-            cat[0]
+            {{ site.baseurl }}{{ categories.url }}
+            {{ cat[0] }}
             {{ site.baseurl }}{{ cat[0].url }}
-            <li><a href="{{ site.baseurl }}{{ cat.url }}">{{ cat[0] }}</a></li>
+            <li><a href="{{ site.baseurl }}{{ categories.url }}">{{ cat[0] }}</a></li>
 
         {% endfor %}
      </ul>
