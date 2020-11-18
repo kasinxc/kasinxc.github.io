@@ -12,7 +12,7 @@ tags: [Newbie, tensorflow]
 
 ```python
 tf.divide(x, y, name=None)
-```python
+```
 
 element-wise x divided by y.
 
